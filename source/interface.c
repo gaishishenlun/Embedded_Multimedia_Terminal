@@ -87,3 +87,14 @@ int blank_menu(void) {
 
     return 0;
 }
+
+int dianzixiangce(void) {
+    int i;
+    char buffer[40] = {0};
+    for (i = 0; i< 6; i++) {
+        sprintf(buffer, MAIN_INTERFACE, i);
+        bmp_menu(buffer);
+        sleep(2);
+    }
+    return 0;
+}

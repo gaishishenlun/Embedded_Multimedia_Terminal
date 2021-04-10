@@ -1,6 +1,7 @@
 #include"interface.h"
 
 
+// 显示图片
 int bmp_menu(const char *pathname) {
     // 普通文件用标准I/O流打开
     FILE *fp_bmp = NULL;
@@ -57,6 +58,8 @@ int bmp_menu(const char *pathname) {
     return 0;
 }
 
+
+// 黑屏
 int blank_menu(void) {
     int fd_fb0 = 0;
 

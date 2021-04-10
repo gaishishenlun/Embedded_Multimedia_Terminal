@@ -4,8 +4,8 @@ CC = gcc
 
 
 all:
-	$(CC) source/*.c -o x86main -I./include/ -pthread 
+	$(CC) source/*.c -o ./bin/x86main -I./include/ -pthread 
 
 arm:
-	$(ACC) source/*.c -o armmain -I./include/ -pthread 
+	$(ACC) source/*.c -o ./bin/armmain -I./include/ -pthread 
 

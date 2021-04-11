@@ -15,3 +15,9 @@ make arm
 
 # v1.0:
     Sleep 2s 循环显示照片
+
+# v2.0:
+    通过madplay实现音乐播放
+
+# v3.0:
+    通过mplayer实现视频播放

@@ -90,20 +90,12 @@ int main(int argc, char *argv[])
 
 					//  下一曲
 					if (usy > 315 && usy < 355) {
-						video_kill();
 						video_next();
-						blank_menu();
-						sleep(1);
-						video_play();
 					}
 
 					// 上一曲
 					if (usy > 120 && usy < 160) {
-						video_kill();
 						video_last();
-						blank_menu();
-						sleep(1);
-						video_play();
 					}
 
 					// 播放/暂停

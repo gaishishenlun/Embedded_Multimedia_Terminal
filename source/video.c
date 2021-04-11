@@ -30,6 +30,8 @@ int video_last(void) {
 		j = 3;
 	else
 		j--;
+	video_kill();
+	video_play();
 	return 0;
 }
 
@@ -39,6 +41,8 @@ int video_next(void) {
 		j = 0;
 	else
 		j++;
+	video_kill();
+	video_play();
 	return 0;
 }
 

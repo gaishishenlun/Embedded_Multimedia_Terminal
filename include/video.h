@@ -3,7 +3,7 @@
 
 #include"stdio.h"
 
-#define VIDEO_PLAY "mplayer video_file/%d.avi -zoom -x 760 -y 480 &"
+#define VIDEO_PLAY "mplayer slave video_file/%d.avi -zoom -x 760 -y 480 &"
 
 
 extern int video_play(void);

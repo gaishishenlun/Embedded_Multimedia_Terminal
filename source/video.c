@@ -10,6 +10,7 @@ int video_play(void) {
 	return 0;
 }
 
+
 int video_stop(void) {
         system("killall -19 mplayer");
         return 0;

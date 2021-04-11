@@ -121,7 +121,6 @@ int main(int argc, char *argv[])
 					}
 				}
 			}
-			printf("视频播放器\n");
 			continue;
 		}
 		if (usx > 30 && usx < 80 && usy > 15 && usy < 70) {

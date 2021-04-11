@@ -85,8 +85,6 @@ int main(int argc, char *argv[])
 			video_play();
 			flag = 1;
 			while(1) {
-				close_ts();
-				open_ts();
 				read_ts(&usx, &usy);
 				if (usx > 760) {
 
@@ -133,6 +131,10 @@ int main(int argc, char *argv[])
 			}
 			printf("视频播放器\n");
 			continue;
+		}
+		if (usx > 30 && usx < 80 && usy > 15 && usy < 70) {
+			blank_menu();
+			break;
 		}
 	}
 

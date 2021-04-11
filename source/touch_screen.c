@@ -1,10 +1,10 @@
 #include"touch_screen.h"
 
-int fd_event0;
+static int fd_event0 = 0;
 
 
 int open_ts(void) {
-	fd_event0 = open("/dev/input/event0", O_RDONLY);
+	fd_event0 = open("/dev/input/event0", O_RDWR);
 	if (-1 == fd_event0) {
 		perror("Open /dev/intpu/event0 error!\n");
 		exit(EXIT_FAILURE);
@@ -21,7 +21,7 @@ int read_ts(unsigned short *px, unsigned short *py) {
 			printf("fd: %d\n",fd_event0);
 			return -1;
 		}
-		
+
 		if(SIevent.type == EV_ABS && SIevent.code == ABS_X && SIevent.value > 0 && SIevent.value < 800) {
 			*px = SIevent.value;
 		}

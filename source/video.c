@@ -1,13 +1,14 @@
 #include"video.h"
 
-char buuf[50] = {0};
-int j = 0;
+char cmd[50] = {0};
+static short j = 0;
 
 
 int video_play(void) {
-	sprintf(buuf, VIDEO_PLAY, j);
-	system(buuf);
-	printf("%s\n",buuf);
+	sprintf(cmd, VIDEO_PLAY, j);
+	printf("%s\n",cmd);
+	system(cmd);
+	printf("%s\n",cmd);
 	return 0;
 }
 

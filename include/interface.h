@@ -7,11 +7,11 @@
 
 //库文件
 #include<stdio.h>
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <sys/mman.h>
+#include<stdio.h>
+#include<sys/types.h>
+#include<sys/stat.h>
+#include<fcntl.h>
+#include<sys/mman.h>
 
 
 //函数声明

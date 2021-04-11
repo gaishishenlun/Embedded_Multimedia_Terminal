@@ -83,7 +83,7 @@ int blank_menu(void) {
     for (i = 0; i< 800 * 480; i++) {
         *(p_mmap_usr + i) = 0x00000000;
     }
-    
+
     close(fd_fb0);
     munmap(p_mmap_usr, 800 * 480 * 4);
     p_mmap_usr = NULL;
@@ -101,3 +101,45 @@ int dianzixiangce(void) {
     }
     return 0;
 }
+
+/*
+char buf[50] = {0};
+unsigned int flag = 0;
+
+int music_play(void) {
+        int i = 0;
+        close(0);
+        flag = 1;
+        sprintf(buf, AUDIO_NAME, i)
+        execlp("madplay","madplay",buf,"-r",NULL);
+        perror("execlp");
+        exit(0);
+}
+
+
+int music_stop(void) {
+        if(flag == 1) {
+                kill(pid, 19);
+                flag = 2;
+        }
+        else if(flag == 2) {
+                kill(pid, 18);
+                flag = 1;
+        }
+}
+
+
+int music_continue(void) {
+
+}
+
+
+int music_last(void) {
+
+}
+
+
+int music_next(void) {
+
+}
+*/

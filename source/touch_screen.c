@@ -16,9 +16,9 @@ int open_ts(void) {
 int read_ts(unsigned short *px, unsigned short *py) {
 	struct input_event SIevent;
 	while(1){
-		printf("wait input_event!\n");
 		if (-1 == read(fd_event0, &SIevent, sizeof(SIevent))) {
-			perror("Read File Error!\n");
+			perror("Read File Error!");
+			printf("fd: %d\n",fd_event0);
 			return -1;
 		}
 		

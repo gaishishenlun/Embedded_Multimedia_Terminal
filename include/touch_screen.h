@@ -1,7 +1,7 @@
 #ifndef _TOUCH_SCREEN_H
 #define _TOUCH_SCREEN_H
 
-
+#include<stdio.h>
 
 #include<sys/types.h>
 #include<sys/stat.h>

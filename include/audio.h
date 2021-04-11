@@ -3,7 +3,7 @@
 
 #include<stdio.h>
 
-#define AUDIO_PLAY "madplay audio/%d.mp3 &"
+#define AUDIO_PLAY "madplay audio_file/%d.mp3 &"
 
 
 
